@@ -75,6 +75,8 @@ GEM
     crass (1.0.5)
     erubi (1.9.0)
     execjs (2.7.0)
+    faker (2.6.0)
+      i18n (>= 1.6, < 1.8)
     ffi (1.11.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -106,6 +108,8 @@ GEM
     public_suffix (4.0.1)
     puma (3.12.1)
     rack (2.0.7)
+    rack-proxy (0.6.5)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -153,6 +157,9 @@ GEM
     selenium-webdriver (3.142.6)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    simple_form (5.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -180,6 +187,10 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    webpacker (4.2.0)
+      activesupport (>= 4.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 4.2)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -195,12 +206,14 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  faker
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
@@ -208,6 +221,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  webpacker (~> 4.x)
 
 RUBY VERSION
    ruby 2.6.3p62

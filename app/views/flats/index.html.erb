@@ -1,0 +1,21 @@
+<%= render 'banner' %>
+
+
+<%= form_tag flats_path, method: :get do %>
+  <%= text_field_tag :filter, params[:filter], class: "search_show_form", placeholder: "Filter" %>
+<% end %>
+<%= form_tag flats_path, method: :get do %>
+  <%= text_field_tag :price, params[:price], class: "search_show_form", placeholder: "Price" %>
+<% end %>
+
+<div class="mt-3 container">
+  <h1 class="mb-3">All our flats (<%= @flats.length %>)</h1>
+  <div class="row">
+    <% @flats.each do |f| %>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <%= render 'flat_card', flat: f %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Add a flat', new_flat_path, class: "btn btn-primary"  %>
+</div>

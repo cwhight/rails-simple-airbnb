@@ -1,5 +1,11 @@
 {
   "name": "rails-simple-airbnb",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^4.2.0",
+    "mapbox-gl": "^1.5.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.9.0"
+  }
 }
